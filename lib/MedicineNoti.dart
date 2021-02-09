@@ -8,6 +8,7 @@ import 'package:flutterproject/DateTime.dart';
 import 'package:flutterproject/HomePage.dart';
 void main() => runApp(MedicineNoti());
  
+
 class MedicineNoti extends StatelessWidget {
   var cardTextStyle = TextStyle(fontFamily: "Montserrat Regular", fontSize: 24, color: Colors.black);
    var mStyle = TextStyle(fontFamily: "Montserrat Medium", fontSize: 12, color: Colors.black);
@@ -19,10 +20,6 @@ var mStyle2 = TextStyle(fontFamily: "Montserrat Medium", fontSize: 14, color: Co
        result.add(handler(i, list[i]));
      }
    }
-
-
- 
-
 
  @override
   Widget build(BuildContext context) {

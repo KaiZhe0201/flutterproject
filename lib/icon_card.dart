@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterproject/forMap.dart';
-import 'package:flutterproject/image_card.dart';
+
 
 class IconCard extends StatelessWidget{
   final IconData iconData;

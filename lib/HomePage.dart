@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutterproject/LoginFormValidation.dart';
+import 'package:flutterproject/ToDolist.dart';
 import 'CallFamPage.dart';
 import 'AboutPage.dart';
 import 'MedicineNoti.dart';
@@ -106,7 +106,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                       InkWell(
                     onTap: (){ Navigator.push(context,
-                          MaterialPageRoute(builder: (_) => AboutPage())); },
+                          MaterialPageRoute(builder: (_) => ToDoList())); },
                     child: new Card(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8)
@@ -116,8 +116,8 @@ class _HomePageState extends State<HomePage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                          SvgPicture.network(
-                           'https://image.flaticon.com/icons/svg/2948/2948059.svg', height: 128,),
-                        Text('About', style: cardTextStyle)
+                           'https://image.flaticon.com/icons/svg/2285/2285516.svg', height: 128,),
+                        Text('To Do List', style: cardTextStyle)
                     ],
                     ),
                   ),
@@ -140,9 +140,9 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                         ),
-                          InkWell(
+                         InkWell(
                     onTap: (){ Navigator.push(context,
-                          MaterialPageRoute(builder: (_) => LoginFormValidation())); },
+                          MaterialPageRoute(builder: (_) => AboutPage())); },
                     child: new Card(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8)
@@ -152,12 +152,12 @@ class _HomePageState extends State<HomePage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                          SvgPicture.network(
-                           'https://image.flaticon.com/icons/svg/3596/3596141.svg', height: 128,),
-                        Text('Log Out', style: cardTextStyle)
+                           'https://image.flaticon.com/icons/svg/2948/2948059.svg', height: 128,),
+                        Text('About', style: cardTextStyle)
                     ],
                     ),
                   ),
-                          ),
+                      ),
                             InkWell(
                     onTap: (){ Navigator.push(context,
                           MaterialPageRoute(builder: (_) => ProfilePage())); },

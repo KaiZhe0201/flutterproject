@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -24,5 +24,6 @@ class Utils {
 
     await _launchUrl(url);
   }
+
 }
   

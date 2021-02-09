@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterproject/ChangePasswordPage.dart';
-import 'package:flutterproject/utils.dart';
+import 'package:flutterproject/LoginFormValidation.dart';
 void main() => runApp(MyApp());
  
 class MyApp extends StatelessWidget {
@@ -108,6 +108,22 @@ class ProfilePage extends StatelessWidget {
             ),
             ),
             onTap:() => Navigator.push(context, MaterialPageRoute(builder: (context)=> ChangePasswordPage()),
+            ),
+            ),
+              SizedBox(
+              height: 30,
+            ),
+             InkWell(
+            child: Text(
+              "Click here to Log Out!"
+              ,style: TextStyle(
+                fontSize: 15.0,
+                color:Colors.black45,
+                letterSpacing: 2.0,
+                fontWeight: FontWeight.w300,
+            ),
+            ),
+            onTap:() => Navigator.push(context, MaterialPageRoute(builder: (context)=> LoginFormValidation()),
             ),
             ),
           ],

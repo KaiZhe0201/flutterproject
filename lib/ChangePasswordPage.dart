@@ -13,7 +13,6 @@ class ChangePasswordPageState extends State<ChangePasswordPage> {
   var _error;
   var _newPasswordController = TextEditingController();
   var _repeatPasswordController = TextEditingController();
- final FirebaseAuth _auth = FirebaseAuth.instance;
    UserModel _currentUser;
   UserModel get currentUser => _currentUser;
   var formkey = GlobalKey<FormState>();
